@@ -13,9 +13,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Lottery App",
-      home: AppBar(
+      home: Scaffold(
+      appBar: AppBar(
         title: Text("Lottery App", style: TextStyle(color: Colors.amberAccent)),
         backgroundColor: Colors.black38,
+      ),
+      backgroundColor: Colors.white70,
+      // home: AppBar(
+      //   title: Text("Lottery App", style: TextStyle(color: Colors.amberAccent)),
+      //   backgroundColor: Colors.black38,
       ),
 
     );
