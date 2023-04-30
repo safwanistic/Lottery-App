@@ -34,10 +34,21 @@ class _MyAppState extends State<MyApp> {
               'Lottery winning number is $x',
               style: TextStyle(fontSize: 18.0),
             )),
-            Text(
-              x > 5 ? "X is Greater than 5" : x.toString(),
-              style: TextStyle(fontSize: 18.0),
-            ),
+            Container(
+              height: 250,
+              decoration: BoxDecoration(
+                color: Colors.grey.withOpacity(.2)
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Icon(Icons.error_outline, color: Colors.red[900],size: 30.0,),
+                  Text('Better Luck next time; Try again')
+                ],
+              ),
+            )
+            
           ],
         ),
         floatingActionButton: FloatingActionButton(
