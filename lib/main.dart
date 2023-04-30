@@ -11,6 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Lottery App",
+      home: AppBar(
+        title: Text("Lottery App", style: TextStyle(color: Colors.amberAccent)),
+        backgroundColor: Colors.black38,
+      ),
 
     );
   }
