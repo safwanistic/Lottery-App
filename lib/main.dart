@@ -36,6 +36,7 @@ class _MyAppState extends State<MyApp> {
               'Lottery winning number is 7',
               style: TextStyle(fontSize: 18.0),
             )),
+            SizedBox(height: 20,),
             Container(
               height: 250,
               width: 200,
